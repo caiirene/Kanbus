@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <table class="layout-table" width="100%">
+        <tr>
+            <td valign="top">
+                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                <li><a href="/Kanbas/Calendar/screen.html">Calendar</a></li>
+                <li><a href="/Kanbas/Inbox/screen.html">Inbox</a></li>
+                <li><a href="/Kanbas/History/screen.html">History</a></li>
+                <li><a href="/Kanbas/Studio/screen.html">Studio</a></li>
+                <li><a href="/Kanbas/Commons/screen.html">Commons</a></li>
+                <li><a href="/Kanbas/Help/screen.html">Help</a></li>
+            </td>
+            <td valign="top">
+                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+                <li><a href="/Kanbas/Courses/ZoomMeetings/screen.html">Zoom Meetings</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
+                <li><a href="/Kanbas/Courses/PanoptoVideo/screen.html">Panopto Video</a></li>
+                <li><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
+                <li><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
+                <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
+                <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
+                <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
+                <li><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
+                <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
+                <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+            </td>
+            <td valign="top">
+                <select name="" id="">
+                    <option value="">SpeedGrader</option>
+                </select>
+                <hr>
+                <label for="AssignmentName"><h3>Assignment Name</h3></label>
+                <input id="AssignmentName" value="A1" placeholder="Assignment Name">
+                <label for="AssignmentDescription"><h3>Assignment Description</h3></label>
+                <textarea id="AssignmentDescription" cols="30" rows="10">This is the assignment description</textarea>
+                <label for="AssignmentPoints"><h3>Points</h3></label>
+                <input id="AssignmentPoints" type="number" value="100" max="100" min="0">
+                <label for="AssignmentGroup"><h3>Assignment Group</h3></label>
+                <select name="" id="AssignmentGroup">
+                    <option value="">Group 1</option>
+                    <option value="">Group 2</option>
+                    <option value="">Group 3</option>
+                </select>
+                <h3>Display Grade as</h3>
+                <select name="" id="">
+                    <option value="">Percentage</option>
+                    <option value="">Complete/Incomplete</option>
+                    <option value="">Points</option>
+                </select>
+                <h3>Submission Type</h3>
+                <select name="" id="">
+                    <option value="">Online</option>
+                    <option value="">On Paper</option>
+                    <option value="">No Submission</option>
+                </select>
+                <h3>Online Entry Options</h3>
+                <input type="checkbox" id="textEntry"><label for="textEntry">Text Entry</label> <br>
+                <input type="checkbox" id="websiteURL"><label for="websiteURL">Website URL</label> <br>
+                <input type="checkbox" id="mediaRecordings"><label for="mediaRecordings">Media Recordings</label> <br>
+                <input type="checkbox" id="studentAnnotation"><label for="studentAnnotation">Student Annotation</label> <br>
+                <input type="checkbox" id="fileUploads" checked><label for="fileUploads">File Uploads</label> <br>
+                <h3>Submission Attempts</h3>
+                <select name="" id="">
+                    <option value="">Unlimited</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <h3>Plagiarism Review</h3>
+                <select name="" id="">
+                    <option value="">None</option>
+                    <option value="">Turnitin</option>
+                    <option value="">Unicheck</option>
+                </select>
+                <h3>Group Assignment</h3>
+                <input type="checkbox" id="groupAssignment"> <label for="groupAssignment">This is a group assignment</label> <br>
+                <h3>Peer Reviews</h3>
+                <input type="checkbox" id="peerReviews"> <label for="peerReviews">Require Peer Reviews</label> <br>
+                <h3>Assign</h3>
+                <h4>Assign to</h4>
+                <input type="text" placeholder="Everyone"> <br>
+                <h4>Due</h4>
+                <input type="date" value="2023-10-01" min="2023-09-15" max="2023-11-01"> <br>
+                <h4>Available From</h4>
+                <input type="date" value="2023-10-01"> <br>
+                <h4>Until</h4>
+                <input type="date" value="2023-10-01"> <br>
+                <button>cancel</button>
+                <button>save</button>                
+            </td>
+
+
+        </tr>
+    </table>
+</body>
+</html>
