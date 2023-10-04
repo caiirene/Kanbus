@@ -4,35 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        td {
-            padding: 10px;
-            border-collapse: collapse;
-        }
-    </style>    
+
+
+    <!-- 这里是所有链接 -->
+    <link href="homecss.css" rel="stylesheet"/>
+    <!-- <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="/vandors/fontawesome-free/css/all.css"/>
+    <link rel="stylesheet" href="/vandors/bootstrap/bootstrap.css"/>
+    <link href="../../basicstyle.css" rel="stylesheet"/>
+
+
+    <!-- 这里是所有链接 --> 
+
+
+    <title>Home</title>
+  
 </head>
 <body>
-    <table border="2" width="100%">
-        <tr>
-            <td valign="top">
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="/Kanbas/Calendar/screen.html">Calendar</a></li>
-                <li><a href="/Kanbas/Inbox/screen.html">Inbox</a></li>
-                <li><a href="/Kanbas/History/screen.html">History</a></li>
-                <li><a href="/Kanbas/Studio/screen.html">Studio</a></li>
-                <li><a href="/Kanbas/Commons/screen.html">Commons</a></li>
-                <li><a href="/Kanbas/Help/screen.html">Help</a></li>
-            </td>
-            <td valign="top">
-                <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
-                <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
-                <li><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
-                <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
-                <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+    <a href="asdfafafd">chaolianjie</a>
+
+    <!-- 隐藏菜单，只在小屏幕显示 -->
+    <div class="coursehomepage-hiddenbar  d-md-none">
+        <div class="left-item"><i class="fa-solid fa-bars"></i></div>
+        <div class="center-item">
+            <div>CS5610.11744.202310<br></div>
+            <div>Module</div>            
+        </div>
+        <div class="right-item"><i class="fa-solid fa-glasses"></i>   <i class="fa-solid fa-caret-down"></i></div>
+    </div>
+
+
+    <div class="course-home-page">
+
+        <!-- 主菜单部分 -->
+        <div class="coursehomepage-mainnav d-none d-md-block">
+            <div class="NEU">
+                N
+            </div>
+            <ul class="mainnav-list">
+                <li>
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa-regular fa-user user"></i><br>
+                        Account
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa-solid fa-gauge-high"></i><br>  <!--这是仪表盘 -->
+                        Dashboard
+                    </a>
+                    </li>
+                <li class="active-mainnav-cell">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa-solid fa-book"></i><br>
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Calendar/screen.html">
+                        <i class="fa fa-calendar-days"></i><br>
+                        Calendar
+                </a></li>
+                <li>
+                    <a href="/Kanbas/Inbox/screen.html">
+                        <i class="fa-regular fa-envelope"></i><br>
+                        Inbox
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/History/screen.html">
+                        <i class="fa-solid fa-clock"></i><br>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Studio/screen.html">
+                        <i class="fa-solid fa-computer"></i><br>
+                        Studio
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Commons/screen.html">
+                        <i class="fa-regular fa-comment"></i><br>
+                        Commons
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Help/screen.html">
+                        <i class="fa-solid fa-circle-info"></i><br>
+                        Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- course nav菜单 -->
+        <div class="coursehomepage-coursenav d-none d-md-block">
+            <ul class="coursenav-list">
+                <li class="active-coursenav-cell"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
                 <li><a href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
                 <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
                 <li><a href="/Kanbas/Courses/ZoomMeetings/screen.html">Zoom</a></li>
@@ -45,8 +114,17 @@
                 <li><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
                 <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
                 <li><a href="/Kanbas/Courses/Settings/index.html">Settings</a></li>
-            </td>
-            <td valign="top">
+                <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
+                <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
+                <li><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
+                <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
+                <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+            </ul>
+        </div>
+
+        <!-- course detail部分 -->
+        <div class="coursehomepage-detailcol">
+            <td>
                 <button>Collapse All</button>
                 <button>View Progress</button>
                 <Select>
@@ -105,6 +183,10 @@
                     </li>
                 </ul>
             </td>
+        </div>
+
+        <!-- 剩余部分 -->
+        <div class="coursehomepage-remainpart d-none d-lg-block">
             <td valign="top">
                 <h2>Course Status</h2>
                 <button>Unpublish</button>
@@ -126,7 +208,14 @@
                     <li><a href="">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
                 </ul>
             </td>
-        </tr>
-    </table>
+        </div>
+
+        
+
+    </div>
+
+
+
+
 </body>
 </html>

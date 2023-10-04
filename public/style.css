@@ -1,0 +1,40 @@
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wd-bg-color-black {
+    background-color: black;
+  }
+  
+  .wd-bg-color-white {
+    background-color: white;
+  }
+  
+  .wd-bg-color-pink {
+    background-color: pink;
+  }
+  .wd-bg-color-yellow {
+    background-color: yellow;
+  }
+  .wd-bg-color-green {
+    background-color: green;
+  }
+  .wd-bg-color-red {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .wd-flex-row-container{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+  }

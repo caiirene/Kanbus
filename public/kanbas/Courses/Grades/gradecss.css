@@ -1,0 +1,119 @@
+/**
+ *这是整个页面的分类，整个页面是一个横版flex
+ */
+ .course-home-page {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/**
+ *页面分为4个竖列
+ * 1. 主菜单
+ * 2. course菜单
+ * 3. course-home-内容
+ * 4. 剩余部分
+ */
+
+
+
+/**
+ * 主菜单部分
+ */
+.coursehomepage-mainnav {
+    background-color: black;
+    width: 80px;
+}
+.coursehomepage-mainnav ul.mainnav-list {
+    list-style: none;
+    padding: 0px;
+}
+.coursehomepage-mainnav ul.mainnav-list li {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* 文字部分 */
+.coursehomepage-mainnav ul.mainnav-list li a {
+    text-decoration: none;
+    font: 0.8em white;
+    color: white;
+}
+  /* 单独定义被选中的mainnav 选项 */
+.coursehomepage-mainnav ul.mainnav-list li.active-mainnav-cell {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.coursehomepage-mainnav ul.mainnav-list li.active-mainnav-cell a {
+    text-decoration: none;
+    font: 0.8em;
+    color: red;
+}
+/* icon 部分 */
+.coursehomepage-mainnav ul.mainnav-list li a i {
+    color: red;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/**
+ * course菜单部分
+ */
+.coursehomepage-coursenav {
+    background-color: white;
+    width: 120px;
+    margin-left: 20px;
+}
+.coursehomepage-coursenav ul.coursenav-list {
+    list-style: none;
+    padding: 0px;
+}
+.coursehomepage-coursenav ul.coursenav-list li {
+    text-align: left;
+    padding: 10px;
+}
+.coursehomepage-coursenav ul.coursenav-list li a {
+    text-decoration: none;
+    font: 0.8em;
+    color: red;
+}
+.coursehomepage-coursenav ul.coursenav-list li.active-coursenav-cell {
+    text-align: left;
+    padding: 10px;
+    border-left: 2px solid black;
+}
+.coursehomepage-coursenav ul.coursenav-list li.active-coursenav-cell a {
+    text-decoration: none;
+    font: 0.8em;
+    color: black;
+}
+
+
+
+
+
+
+/**
+ * course-home-内容 部分
+ */
+.coursehomepage-detailcol {
+    flex-grow: 1;
+}
+
+
+
+/**
+ * 剩余部分
+ */
+ .coursehomepage-remainpart {
+
+}
