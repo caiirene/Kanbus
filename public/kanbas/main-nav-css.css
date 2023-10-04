@@ -1,0 +1,71 @@
+
+/**
+ *这是整个页面的分类，整个页面是一个横版flex
+ */
+ .entire-page {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/**
+ * 主菜单部分 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ */
+
+ /*对于整列的定义，黑背景，宽度80*/
+ .mainnav {
+    background-color: black;
+    width: 80px;
+}
+/* NEU ICON */
+.mainnav .NEU {
+    color: brown;
+    font-size: 30px;
+    text-align: center;  /* 水平居中 */
+    display: flex;       /* 以下三行用于垂直居中 */
+    justify-content: center;
+    align-items: center;
+    height: 70px;        /* 如果有需要，可以设置一个具体的高度，如 50px */
+}
+/*对于一个列表的定义，无列表点，wupadding*/
+.mainnav ul.mainnav-list {
+    list-style: none;
+    padding: 0px;
+}
+.mainnav ul.mainnav-list li {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* 文字部分 */
+.mainnav ul.mainnav-list li a {
+    text-decoration: none;
+    font: 0.8em white;
+    color: white;
+}
+  /* 单独定义被选中的mainnav 选项 */
+.mainnav ul.mainnav-list li.active-mainnav-cell {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.mainnav ul.mainnav-list li.active-mainnav-cell a {
+    text-decoration: none;
+    font: 0.8em;
+    color: red;
+}
+/* icon 部分 */
+.mainnav ul.mainnav-list li a i {
+    color: red;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+.mainnav ul.mainnav-list li a i.user {
+    color: gainsboro;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}

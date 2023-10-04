@@ -1,219 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 这里是所有链接 -->  
-    <link href="../../basicstyle.css" rel="stylesheet"/>
-    <link href="gradecss.css" rel="stylesheet"/>  
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- 这里是所有链接 -->
-
-
-    <title>Grade</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grades</title>
+  <link rel="stylesheet" href="../../../style.css" />
+  <link rel="stylesheet" href="../../KanbasNavigation/index.css" />
+  <link rel="stylesheet" href="../CourseNavigation/index.css" />
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../basicstyle.css" rel="stylesheet" />
+  <link href="../../main-nav-css.css" rel="stylesheet" />
+  <link href="../../entire-page-css.css" rel="stylesheet" />
 </head>
 
 <body>
+  <div class="wd-flex-row-container">
 
-    <div class="course-home-page">
 
-        <!-- 主菜单部分 -->
-        <div class="coursehomepage-mainnav">
-            <ul class="mainnav-list">
-                <li>
-                    <a href="/Kanbas/Account/Profile/screen.html">
-                        <i class="fa-regular fa-user"></i>
-                        Account
-                    </a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Dashboard/screen.html">
-                        <i class="fa-solid fa-gauge-high"></i>  <!--这是仪表盘 -->
-                        Dashboard
-                    </a>
+            <!-- 主菜单部分 -->
+            <div class="mainnav d-none d-md-block">
+                <div class="NEU">
+                    N
+                </div>
+                <ul class="mainnav-list">
+                    <li>
+                        <a href="/Kanbas/Account/Profile/screen.html">
+                            <i class="fa-regular fa-user user"></i><br>
+                            Account
+                        </a>
                     </li>
-                <li class="active-mainnav-cell">
-                    <a href="/Kanbas/Courses/Home/screen.html">
-                        <i class="fa-solid fa-book"></i>
-                        Courses
-                    </a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Calendar/screen.html">
-                        <i class="fa fa-calendar-days"></i>
-                        Calendar
-                </a></li>
-                <li>
-                    <a href="/Kanbas/Inbox/screen.html">
-                        <i class="fa-regular fa-envelope"></i>
-                        Inbox
-                    </a>
-                </li>
-                <li>
-                    <a href="/Kanbas/History/screen.html">
-                        <i class="fa-solid fa-clock"></i>
-                        History
-                    </a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Studio/screen.html">
-                        <i class="fa-solid fa-computer"></i>
-                        Studio
-                    </a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Commons/screen.html">
-                        <i class="fa-regular fa-comment"></i>
-                        Commons
-                    </a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Help/screen.html">
-                        <i class="fa-solid fa-circle-info"></i>
-                        Help
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- course nav菜单 -->
-        <div class="coursehomepage-coursenav">
-            <ul class="coursenav-list">
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
-                <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
-                <li><a href="/Kanbas/Courses/ZoomMeetings/screen.html">Zoom</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
-                <li class="active-coursenav-cell"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
-                <li><a href="/Kanbas/Courses/PanoptoVideo/screen.html">Panopto Video</a></li>
-                <li><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
-                <li><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
-                <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
-                <li><a href="/Kanbas/Courses/Settings/index.html">Settings</a></li>
-                <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
-                <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
-                <li><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
-                <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
-                <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
-            </ul>
-        </div>
-
-        <!-- 这里是成绩单 -->
-        <div>
-            <select name="" id="">
-                <option value="">Gradebook</option>
-            </select>
-            <button>Import</button>
-            <select name="" id="">
-                <option value="">Export</option>
-            </select>
-            <button>Configure</button>
-        
-            <table>
-                <tr>
-                    <td>
-                        <strong>Student Names</strong><br>
-                        <input title="Type the name of the student to search for" 
-                               placeholder="Search Students">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Assignment Names</strong><br>
-                        <input type="text" placeholder="Search Assignments">
-                    </td>
-                </tr>
-            </table>
-            <button>Apply Filters</button>
-        
-
-
-
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Student Name</th>
-                            <th>A1 SETUP Out of 100</th>
-                            <th>A2 HTML Out of 100</th>
-                            <th>A3 CSS Out of 100</th>
-                            <th>A4 BOOTSTRAP Out of 100</th>
-                            <th>A5 JAVASCRIPT Out of 100</th>
-                            <th>A6 REACT Out of 100</th>
-                            <th>A7 REDUX Out of 100</th>
-                            <th>A8 NODEJS Out of 100</th>
-                            <th>A9 MONGODB Out of 100</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Alice Wonderland</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>Bob Marley</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>90</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>90</td>
-                            <td>100</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>Charlie Chaplin</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>80</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>80</td>
-                            <td>100</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>Daniel Craig</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>70</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>70</td>
-                            <td>100</td>
-                            <td>100</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html">
+                            <i class="fa-solid fa-gauge-high"></i><br> <!--这是仪表盘 -->
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="active-mainnav-cell">
+                        <a href="/Kanbas/Courses/Home/screen.html">
+                            <i class="fa-solid fa-book"></i><br>
+                            Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Calendar/screen.html">
+                            <i class="fa fa-calendar-days"></i><br>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Inbox/screen.html">
+                            <i class="fa-regular fa-envelope"></i><br>
+                            Inbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/History/screen.html">
+                            <i class="fa-solid fa-clock"></i><br>
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Studio/screen.html">
+                            <i class="fa-solid fa-computer"></i><br>
+                            Studio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Commons/screen.html">
+                            <i class="fa-regular fa-comment"></i><br>
+                            Commons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Help/screen.html">
+                            <i class="fa-solid fa-circle-info"></i><br>
+                            Help
+                        </a>
+                    </li>
+                </ul>
             </div>
-            
 
 
+    <div>
+      <div>
+        <div class="row">
+          <div class="col-auto">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#courseNavigation">
+              <i class="fa-solid fa-bars ps-4 pt-4 text-danger fa-lg "></i>
+            </button>
+          </div>
+          <div class="col ps-0 pt-1">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb pt-3">
+                <li class="breadcrumb-item"><a href="#" class="text-danger text-decoration-none">CS5610.11744.202310</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Grades</li>
+              </ol>
+            </nav>
+          </div>
+          <hr>
         </div>
+      </div>
 
+      <div class="wd-flex-row-container">
+        <div class="wd-bg-color-white collapse show" id="courseNavigation">
+          <ul class="wd-course-navigation">
+            <li class="text-nowrap text-secondary fs-6 mt-1 pt-1 ps-2 mb-3">
+              <small>202410_1 Fall 2023 Semest...</small>
+            </li>
+            <li>
+              <a href="../Home/screen.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Modules</a>
+            </li>
+            <li>
+              <a href="#">Piazza</a>
+            </li>
+            <li>
+              <a href="#">Zoom Meetings</a>
+            </li>
+            <li>
+              <a href="../Assignments/screen.html">Assignments</a>
+            </li>
+            <li>
+              <a href="#">Quizzes</a>
+            </li>
+            <li class="wd-active">
+              <a href="#">Grades</a>
+            </li>
+            <li>
+              <a href="#">People</a>
+            </li>
+            <li>
+              <a href="#">Panopto Video</a>
+            </li>
+            <li>
+              <a href="#">Discussions</a>
+            </li>
+            <li>
+              <a href="#">Announcements</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+            </li>
+            <li>
+              <a href="#">Files</a>
+            </li>
+            <li>
+              <a href="#">Rubrics</a>
+            </li>
+            <li>
+              <a href="#">Outcomes</a>
+            </li>
+            <li>
+              <a href="#">Collaborations</a>
+            </li>
+            <li>
+              <a href="#">Syllabus</a>
+            </li>
+            <li>
+              <a href="../Settings/courseDetailsTab.html">Settings</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-5">
+          <div class="float-end">
+            <button type="button" class="btn btn-light border border-secondary-subtle"><i class="fa-solid fa-file-import"></i>Import</button>
+            <button type="button" class="btn btn-light border border-secondary-subtle"><i class="fa-solid fa-file-export"></i>Export</button>
+            <button type="button" class="btn btn-light border border-secondary-subtle"><i class="fa-solid fa-gear"></i></button>
+          </div>
+          <div class="container px-0 pt-5">
+            <div class="row ">
+              <div class="col mb-3">
+                <h6><strong>Student Name</strong></h6>
+                <select class="form-select">
+                  <option selected><i class="fa-solid fa-magnifying-glass"></i> Search Students</option>
+                </select>
+              </div>
+              <div class="col mb-3" >
+                <h6><strong>Assignments Name</strong></h6>
+                <select class="form-select">
+                  <option selected>Search Assignments</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-light"><i class="fa-solid fa-filter"></i>Apply Filter</button>
+          <br />
+          <br />
+          <div  class="container">
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Student Name</th>
+                  <th>A1 SETUP Out of 100</th>
+                  <th>A2 HTML  Out of 100</th>
+                  <th>A3 CSS  Out of 100</th>
+                  <th>A4 BOOTSTRAP Out of 100</th>
+                  <th>A5 JAVASCRIPT Out of 100</th>
+                  <th>A6 REACT Out of 100</th>
+                  <th>A7 REDUX Out of 100</th>
+                  <th>A8 NODE Out of 100</th>
+                  <th>A9 MONGO Out of 100</th>
+                </tr>
+              </thead>
+              <tbody style="text-align: center;" >
+                <tr>
+                  <td class="text-danger">Alice Wonderland</td>
+                  <td>98</td>
+                  <td>89</td>
+                  <td>
+                    <div class="justify-content-center align-items-center">
+                      <input type="text" id="text-fields-grades" class="form-control text-center w-75" value="89" />
+                    </div>
+                  </td>
 
+                  <td>90</td>
+                  <td>90</td>
+                  <td>89</td>
+                  <td>88</td>
+                  <td>97</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">Bob Builder</td>
+                  <td>98</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <input type="text" id="text-fields-grades" class="form-control text-center w-50" value="80" />
+                      <i class="fa-solid fa-arrow-right-from-bracket ms-2"></i>
+                    </div>
+                  </td>
+                  <td>87</td>
+                  <td>86</td>
+                  <td>78</td>
+                  <td>94</td>
+                  <td>85</td>
+                  <td>84</td>
+                  <td>92</td>
 
+                </tr>
+                <tr>
+                  <td class="text-danger">Charlie Chaplin</td>
+                  <td>99</td>
+                  <td>89</td>
+                  <td>97</td>
+                  <td>88</td>
+                  <td>96</td>
+                  <td>93</td>
+                  <td>95</td>
+                  <td>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <input type="text" id="text-fields-grades" class="form-control text-center w-75" value="100" />
+                    </div>
+
+                  </td>
+                  <td>93</td>
+
+                </tr>
+                <tr>
+                  <td class="text-danger">Han Solo</td>
+                  <td>83</td>
+                  <td>99</td>
+                  <td>94</td>
+                  <td>98</td>
+                  <td>86</td>
+                  <td>83</td>
+                  <td>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <input type="text" id="text-fields-grades" class="form-control text-center w-50" value="88" />
+                      <i class="fa-solid fa-arrow-right-from-bracket ms-2"></i>
+                    </div>
+                  </td>
+                  <td>80</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
-
-
-
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

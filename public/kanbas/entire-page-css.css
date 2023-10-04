@@ -1,0 +1,23 @@
+
+/**
+ *这是整个页面的分类，整个页面是一个横版flex
+ */
+ .entire-page {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/**
+ *这是页面中除了Main Nav的剩余部分，主要设置一下padding之类
+ */
+.rest-page {
+    margin: 18px;
+    flex-grow: 1;
+}
+
+
+.rest-page-no-marg {
+    margin: 2px;
+    flex-grow: 1;
+}

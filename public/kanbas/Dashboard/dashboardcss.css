@@ -1,0 +1,16 @@
+.dashboard-mainarea {
+    padding-left: 14px;
+}
+.dashboard-mainarea h3 {
+    color: grey;
+}
+
+.my-card {
+    width: 240px;
+    margin: 10px;
+}
+
+.custom-img1 {
+    background-color: #007BFF; /* 这是Bootstrap的主题蓝色，可以按照需要更改 */
+    height: 150px;
+}

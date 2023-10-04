@@ -1,0 +1,32 @@
+
+/**
+ * course菜单部分 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ */
+ .next-nav {
+    background-color: white;
+    width: 120px;
+    margin-left: 20px;
+}
+.next-nav ul.coursenav-list {
+    list-style: none;
+    padding: 0px;
+}
+.next-nav ul.coursenav-list li {
+    text-align: left;
+    padding: 10px;
+}
+.next-nav ul.coursenav-list li a {
+    text-decoration: none;
+    font: 0.8em;
+    color: red;
+}
+.next-nav ul.coursenav-list li.active-coursenav-cell {
+    text-align: left;
+    padding: 10px;
+    border-left: 2px solid black;
+}
+.next-nav ul.coursenav-list li.active-coursenav-cell a {
+    text-decoration: none;
+    font: 0.8em;
+    color: black;
+}

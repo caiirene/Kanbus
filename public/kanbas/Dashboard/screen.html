@@ -1,4 +1,281 @@
 <!DOCTYPE html>
+
 <head>
-    <link href="" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- 链接 -->
+    <link rel="stylesheet" href="/vandors/fontawesome-free/css/all.css"/>
+    <link rel="stylesheet" href="/vandors/bootstrap/bootstrap.css"/>
+    <link href="../../basicstyle.css" rel="stylesheet"/>
+    <link href="../main-nav-css.css" rel="stylesheet"/>
+    <link href="../entire-page-css.css" rel="stylesheet"/>
+    <link href="dashboardcss.css" rel="stylesheet"/>
+
+
+    <title>Dashboard</title>
+
 </head>
+
+<body>
+
+    <!-- 首先是整体，是个flex，row -->
+    <div class="entire-page">
+
+        <!-- 然后是最左边黑色main nav -->
+        <div class="mainnav d-none d-md-block">
+            <div class="NEU">
+                N
+            </div>
+            <ul class="mainnav-list">
+                <li>
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa-regular fa-user user"></i><br>
+                        Account
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa-solid fa-gauge-high"></i><br>  <!--这是仪表盘 -->
+                        Dashboard
+                    </a>
+                    </li>
+                <li class="active-mainnav-cell">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa-solid fa-book"></i><br>
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Calendar/screen.html">
+                        <i class="fa fa-calendar-days"></i><br>
+                        Calendar
+                </a></li>
+                <li>
+                    <a href="/Kanbas/Inbox/screen.html">
+                        <i class="fa-regular fa-envelope"></i><br>
+                        Inbox
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/History/screen.html">
+                        <i class="fa-solid fa-clock"></i><br>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Studio/screen.html">
+                        <i class="fa-solid fa-computer"></i><br>
+                        Studio
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Commons/screen.html">
+                        <i class="fa-regular fa-comment"></i><br>
+                        Commons
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Help/screen.html">
+                        <i class="fa-solid fa-circle-info"></i><br>
+                        Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 再是一个整体，需要有标题，分割线，和下面三栏内容 -->
+        <div class="rest-page">
+
+            <!-- 这里是Dashboard标题 -->
+            <p style="font-size: 28px;">
+                Dashboard
+            </p>
+            <!-- 分割线 -->
+            <hr>
+            <!-- 接下来是一个整体，包含上方文字，分割线，卡片群 -->
+            <div class="dashboard-mainarea">
+                <h3>
+                    Published course(num)
+                </h3>
+                <hr>
+                <!-- 卡片群 -->
+                <div class="row d-flex justify-content-start flex-wrap">
+
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #71ad2c; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #3148a3; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #71ad2c; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #71ad2c; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #71ad2c; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #71ad2c; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #7f99a1; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #9122aa; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #95743b; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <!--第三张-->
+                    <div class="col-auto ms-5 mt-4 mb-4" style="width: 260px;">
+                        <div class="card h-100">
+                          <div style="background-color: #31ad2c; height: 150px;"><i
+                              class="fa-solid fa-ellipsis-vertical float-end me-4 pt-4 text-white fa-lg"></i></div>
+                          <div class="card-body">
+                            <a href="../Courses/Home/screen.html"
+                              class="card-title col-12 text-truncate text-decoration-none d-inline-block">CS5002 Discrete
+                              Structure</a>
+                            <p class="card-text">CS5002.36234.202310<br />
+                              <small>Fall 2023 Semester Full Term</small>
+                            </p>
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
