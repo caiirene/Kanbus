@@ -28,12 +28,25 @@
 
     <!-- 隐藏菜单，只在小屏幕显示 -->
     <div class="coursehomepage-hiddenbar  d-md-none">
-        <div class="left-item"><i class="fa-solid fa-bars"></i></div>
+        <div class="left-item">
+            <a href="../../KanbasNavigation/index.html">
+                <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#kanbasNavigation">
+                    <i class="fas fa-bars pt-3 fa-lg text-white ms-2"></i>
+                </button>
+            </a>
+        </div>        
         <div class="center-item">
             <div>CS5610.11744.202310<br></div>
             <div>Module</div>
         </div>
-        <div class="right-item"><i class="fa-solid fa-glasses"></i> <i class="fa-solid fa-caret-down"></i></div>
+        <div class="right-item">
+            <a href="../CourseNavigation/index.html">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#courseNavigation">
+                <i class="fa-solid fa-glasses text-white me-2"></i><i
+                  class="fas fa-chevron-down text-white fa-lg pt-2"></i>
+              </button>
+            </a>
+        </div>
     </div>
 
 
