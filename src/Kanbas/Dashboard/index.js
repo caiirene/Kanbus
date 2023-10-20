@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import db from "../Database";
-import {AiOutlineNotification, AiTwotoneBell} from "react-icons/ai";
+import {AiOutlineNotification} from "react-icons/ai";
 
 function Dashboard() {
   const courses = db.courses;
