@@ -20,15 +20,15 @@ function AssignmentEditor() {
     <div>
       <div className="d-flex justify-content-end">
         <div></div>
-        <BsFillCheckCircleFill className="green-icon" style={{ paddingRight: '6px' }}/>
+        <BsFillCheckCircleFill className="green-icon" style={{ paddingRight: '6px' }} />
         <h4 style={{ color: 'green' }}>Published</h4>
-        <BiDotsVerticalRounded className="gray-icon"/>
+        <BiDotsVerticalRounded className="gray-icon" />
       </div>
       <h2>Assignment Name</h2>
       <input value={assignment.title}
-             className="form-control mb-2" />
+        className="form-control mb-2" />
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-danger">
+        className="btn btn-danger">
         Cancel
       </Link>
       {/* <Link onClick={handleSave}
