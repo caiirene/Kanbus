@@ -21,5 +21,3 @@ function Kanbas() {
   );
 }
 export default Kanbas;
-  
-  

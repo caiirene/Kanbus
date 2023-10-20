@@ -1,0 +1,13 @@
+.green-icon {
+    color: green;
+    font: 2em sans-serif;
+}
+.gray-icon {
+    color: gray;
+    font: 2em sans-serif;
+}
+.no-margin-list {
+    margin-left: 0;
+    border: 0;
+    padding: 0;
+}

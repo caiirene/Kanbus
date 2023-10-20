@@ -1,0 +1,30 @@
+.away-from-edge {
+    margin-right: 30px;
+}
+
+.green-icon {
+    color: green;
+    font: 2em sans-serif;
+}
+.gray-icon {
+    color: gray;
+    font: 2em sans-serif;
+}
+.no-margin-list {
+    margin-left: 0;
+    border: 0;
+    padding: 0;
+    
+}
+
+.list-group-item-secondary {
+    color: darkgray;
+    font: 16px sans-serif;
+}
+.no-radio {
+    border-radius: 12px;
+    border: 0px;
+}
+.expand{
+    flex-grow: 1;
+}
