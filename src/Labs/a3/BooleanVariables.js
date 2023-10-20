@@ -22,7 +22,7 @@ function BooleanVariable() {
         true4     = {true4 + ""}     <br />
         true5     = {true5 + ""}     <br />
         false3    = {false3 + ""}    <br />
-        sortaTrue = {sortaTrue + ""} <br />
+
         notTrue   = {notTrue + ""}
     </div>
     );
