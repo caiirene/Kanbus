@@ -9,6 +9,7 @@ import {Routes, Route, Navigate} from "react-router";
 
 function App() {
   return (
+    
     <HashRouter>
       <div>
         <Routes>
@@ -19,9 +20,6 @@ function App() {
         </Routes>
       </div>
     </HashRouter>
-  
-
-
   );
 }
 
