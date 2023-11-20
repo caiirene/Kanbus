@@ -20,27 +20,6 @@ function ModuleList() {
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
 
-  // const addModule = (module) => {
-  //   setModules([
-  //     { ...module, _id: new Date().getTime().toString() },
-  //     ...modules,
-  //   ]);
-  // };
-  // const deleteModule = (moduleId) => {
-  //   setModules(modules.filter(
-  //     (module) => module._id !== moduleId));
-  // };
-  // const updateModule = () => {
-  //   setModules(
-  //     modules.map((m) => {
-  //       if (m._id === module._id) {
-  //         return module;
-  //       } else {
-  //         return m;
-  //       }
-  //     })
-  //   );
-  // }
 
   return (
     <ul className="list-group">
