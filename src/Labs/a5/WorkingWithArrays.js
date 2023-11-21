@@ -275,87 +275,6 @@ function WorkingWithArrays() {
       <br /><br /><br /><br /><br /><br /><br /><br />
 
 
-
-
-
-
-
-      {/* 
-
-
-      <h2>Todos from server</h2>
-      <button
-        className="btn btn-primary"
-        onClick={() => updateTitle(id, title)}
-      >
-        Update Todo Title-2
-      </button>
-      <button className="btn btn-primary" onClick={createTodo}>
-        Create Todo
-      </button>
-      <button className="btn btn-primary" onClick={postTodo}>
-        Post Todo
-      </button>
-      <button onClick={updateTodo}>
-        Update Todo
-      </button>
-      <input
-        className="form-control"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-
-      <textarea
-        onChange={(e) => setTodo({
-          ...todo,
-          description: e.target.value
-        })}
-        value={todo.description} type="text"
-      />
-      <input
-        onChange={(e) => setTodo({
-          ...todo, due: e.target.value
-        })}
-        value={todo.due} type="date"
-      />
-      <label>
-        <input
-          onChange={(e) => setTodo({
-            ...todo, completed: e.target.checked
-          })}
-          value={todo.completed} type="checkbox"
-        />
-        Completed
-      </label>
-      <button onClick={postTodo} >
-        Post Todo
-      </button>
-
-
-      <ul className="list-group">
-        {todos.map((todo) => (
-          <li className="list-group-item" key={todo.id}>
-            <button
-              onClick={() => fetchTodoById(todo.id)}
-              className="btn btn-warning me-2 float-end" >
-              Edit
-            </button>
-            <button
-              className="btn btn-danger float-end"
-              onClick={() => deleteTodo(todo.id)}
-            >
-              Delete
-            </button>
-            <input
-              checked={todo.completed}
-              type="checkbox" readOnly
-            />
-            {todo.title}
-            <p>{todo.description}</p>
-            <p>{todo.due}</p>
-          </li>
-        ))}
-      </ul> */}
       <hr />
       <hr />
       <hr />
@@ -370,7 +289,7 @@ function WorkingWithArrays() {
       <hr />
 
       <a
-        href={`http://localhost:4000/a5/todos/${id}/title/${title}`}
+        href={`http://five610-node-caiirene.onrender.com/a5/todos/${id}/title/${title}`}
         className="btn btn-primary"
       >
         Update Todo Title-1
