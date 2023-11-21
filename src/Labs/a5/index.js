@@ -12,10 +12,7 @@ function Assignment5() {
           Welcome
         </a>
       </div>
-      <hr />
-      <hr />
-      <hr />
-      <h1>SimpleAPIExamples</h1>
+
       <hr />
       <EncodingParametersInURLs />
       <hr />

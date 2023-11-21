@@ -4,7 +4,7 @@ import axios from "axios";
 
 
 function EncodingParametersInURLs() {
-  const API = "https://five610-node-caiirene.onrender.com/a5"
+  const API = "https://five610-node-caiirene.onrender.com"
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
 
