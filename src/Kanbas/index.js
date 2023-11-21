@@ -12,7 +12,9 @@ import axios from "axios";
 function Kanbas() {
 
   const [courses, setCourses] = useState([]);
-  const URL = "http://five610-node-caiirene.onrender.com/api/courses";
+  // const URL = "http://five610-node-caiirene.onrender.com/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
+  const URL = `${API_BASE}/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
