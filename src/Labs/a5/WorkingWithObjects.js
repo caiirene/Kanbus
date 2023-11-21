@@ -13,7 +13,7 @@ function WorkingWithObjects() {
         completed: true,
         score: 98,
     });
-    const URL = "http://five610-node-caiirene.onrender.com/a5/assignment";
+    const URL = "https://five610-node-caiirene.onrender.com/a5/assignment";
     const fetchAssignment = async () => {
         const response = await axios.get(`${URL}`);
         setAssignment(response.data);
@@ -35,14 +35,14 @@ function WorkingWithObjects() {
         <div>
             <h1 style={{ color: "orange" }}>-------Working With Objects----</h1>
             <h4 style={{ color: "lightblue" }}> Retrieving Objects</h4>
-            <a href="http://five610-node-caiirene.onrender.com/a5/assignment"
+            <a href="https://five610-node-caiirene.onrender.com/a5/assignment"
                 className="btn btn-danger me-2">
                 Get Assignment
             </a>
             <br />
             <h4 style={{ color: "lightblue" }}>Retrieving Properties</h4>
             <a
-                href="http://five610-node-caiirene.onrender.com/a5/assignment/title"
+                href="https://five610-node-caiirene.onrender.com/a5/assignment/title"
                 className="btn btn-danger me-2">
                 Get Title
             </a>
