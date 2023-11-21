@@ -29,15 +29,17 @@ function Kanbas() {
   });
   const addNewCourse = async () => {
     const response = await axios.post(URL, course);
-    setCourses([response.data,...courses]);
+    setCourses([response.data, ...courses]);
   };
-  const deleteCourse = async (courseId) => {
+  const deleteCourse = async (course) => {
     const response = await axios.delete(
       `${URL}/${course._id}`
     );
-    setCourses(courses.filter((course) => course._id !== courseId));
+    setCourses(courses.filter(
+      (c) => c._id !== course._id));
   };
-  const updateCourse = async (course) => {
+
+  const updateCourse = async () => {
     const response = await axios.put(
       `${URL}/${course._id}`,
       course
@@ -50,7 +52,10 @@ function Kanbas() {
         return c;
       })
     );
-    setCourse({ name: "" });
+    setCourse({
+      name: "New Course", number: "New Number",
+      startDate: "2023-09-10", endDate: "2023-12-15",
+    });
   };
 
 

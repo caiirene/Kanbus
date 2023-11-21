@@ -31,10 +31,13 @@ const modulesSlice = createSlice({
     setModules: (state, action) => {
       state.modules = action.payload;
     },
+    setModule: (state, action) => {
+      state.module = action.payload;
+    },
   },
 });
 
 
 export const { addModule, deleteModule,
-  updateModule, setModules  } = modulesSlice.actions;
+  updateModule, setModules, setModule  } = modulesSlice.actions;
 export default modulesSlice.reducer;
