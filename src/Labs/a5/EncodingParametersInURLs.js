@@ -53,17 +53,12 @@ function EncodingParametersInURLs() {
       <h3 style={{ color: "lightblue" }}>Fetch Result</h3>
       <button onClick={() => fetchSum(a, b)}
         className="btn btn-danger mb-2  w-100" >
-        Fetch Sum of {a} + {b}
+        Fetch Summmm of {a} + {b}
       </button>
       <button onClick={() => fetchSubtraction(a, b)}
         className="btn btn-danger me-2 w-100" >
         Fetch Substraction of {a} - {b}
       </button>
-
-
-
-
-
 
 
       <h3 style={{ color: "lightblue" }}>Path Parameters</h3>
