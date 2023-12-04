@@ -15,7 +15,7 @@ function Kanbas() {
 
   const [courses, setCourses] = useState([]);
   // const URL = "http://five610-node-caiirene.onrender.com/api/courses";
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000/api" || "https://five610-node-caiirene.onrender.com/api";
+  const API_BASE = "https://five610-node-caiirene.onrender.com/api" || process.env.REACT_APP_API_BASE || "http://localhost:4000/api" || "https://five610-node-caiirene.onrender.com/api";
   const URL = `${API_BASE}/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(URL);
